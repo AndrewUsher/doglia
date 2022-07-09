@@ -62,6 +62,10 @@ export const getStaticProps: GetStaticProps<
   }
 }
 
+export const config = {
+  unstable_runtimeJS: false,
+}
+
 const Home: NextPage<StaticProps> = ({ breedImages, breedName }) => {
   return (
     <>

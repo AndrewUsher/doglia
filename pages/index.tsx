@@ -28,6 +28,10 @@ export const getStaticProps: GetStaticProps<StaticProps> = async () => {
   }
 }
 
+export const config = {
+  unstable_runtimeJS: false,
+}
+
 const Home: NextPage<StaticProps> = ({ breeds }) => {
   return (
     <>
